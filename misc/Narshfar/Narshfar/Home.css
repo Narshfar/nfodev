@@ -1,0 +1,104 @@
+body {
+	background-color: black;
+	position:absolute;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	width:100%;
+	height: 100%;
+}
+.sg {
+	border: 2px solid silver;
+	background-color: clear;
+	margin:1px;
+	border-radius: 1em;
+}
+#wrap {
+	/*This is a full wrap, it holds everything in the entirescript, basically the body without the body. lays where the body would. */
+	position:absolute;
+	width:100%;
+	height: auto;
+	background-color:black;
+	background-image:url(http://walldiskpaper.com/wp-content/uploads/2014/11/Green-Wallpaper-1920x1080-HD.jpg);
+}
+#lBar {
+	display: inline-block;
+	height: 100%;
+	width: 5em;
+	float:left;
+	background-color: clear;
+}
+#rBar {
+	height: 100%;
+	width: 5em;
+	float:right;
+	background-color: clear;
+}
+#wrap2 {
+	/*This is to create the two side borders with margins, kinda a work around
+	 * now that I'm so deep into this web design. Just re-wrapped it.*/
+	margin-left: 5em;
+	margin-right: 5em;
+	background-image: 
+	height:auto;
+	background-size:contain;
+	border: 2px solid gold;
+	border-radius: 1em;
+	
+}
+#navBar {
+	width:99%;
+	height: 3em;
+	text-align: center;
+	margin-bottom: .2em;
+
+}
+#News {
+	text-align:center;
+	width:50%;
+	height:50em;
+	display:inline-block;
+	margin-right: .2em;
+	float: left;
+}
+	#rightTopGroup {
+		/*This group is because I couldnt set two boxes beside another ontop of each other. like it is now, so I had to combine them in one
+		 * div so that I could treat the inside like a separate section then set the div acting as on to inline-block the other (news) */
+	width: 48%;
+	height:20em;
+	display:inline-block;
+	position:inherit;
+}
+#noClue {
+	width: 78%;
+	height: 4em;
+	display:inline-block;
+	margin-right: 0;
+	text-align: center;
+}
+#notifictions {
+	width: 20%;
+	height: 4em;
+	display: inline-block;
+	text-align:center;
+	margin-right: 0;
+	margin-left: 0;
+}
+#narshAd {
+	width: 100%;
+	height: 15.5em;
+	text-align:center;
+	margin-top: .2em;
+}
+#showSomeLove {
+	width:50%;
+	height:21em;
+	margin-top: 1em;
+	clear:left;
+}
+#footer {
+	clear:both;
+	width:100%;
+	height: 2em;
+}
+

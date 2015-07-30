@@ -1,0 +1,7 @@
+name             'Webserver'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures Webserver'
+long_description 'Installs/Configures Webserver'
+version          '0.1.0'

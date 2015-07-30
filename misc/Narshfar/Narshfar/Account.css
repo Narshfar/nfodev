@@ -1,0 +1,249 @@
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+/*  GRID OF THREE   ============================================================================= */
+
+	
+.span_3_of_3 {
+	width: 100%; 
+}
+
+.span_2_of_3 {
+	width: 66.13%; 
+}
+
+.span_1_of_3 {
+	width: 32.26%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
+	}
+}
+/*  GRID OF FOUR   ============================================================================= */
+
+	
+.span_4_of_4 {
+	width: 100%; 
+}
+
+.span_3_of_4 {
+	width: 74.6%; 
+}
+
+.span_2_of_4 {
+	width: 49.2%; 
+}
+
+.span_1_of_4 {
+	width: 23.8%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%; 
+	}
+	.span_1_of_4 {
+		width: 100%; 
+	}
+}
+/*  GRID OF FIVE   ============================================================================= */
+
+	
+.span_5_of_5 {
+	width: 100%;
+}
+
+.span_4_of_5 {
+  	width: 79.68%; 
+}
+
+.span_3_of_5 {
+  	width: 59.36%; 
+}
+
+.span_2_of_5 {
+  	width: 39.04%;
+}
+
+.span_1_of_5 {
+  	width: 18.72%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_5_of_5 {
+		width: 100%; 
+	}
+	.span_4_of_5 {
+		width: 100%; 
+	}
+	.span_3_of_5 {
+		width: 100%; 
+	}
+	.span_2_of_5 {
+		width: 100%; 
+	}
+	.span_1_of_5 {
+		width: 100%; 
+	}
+}
+html, body {
+	width:100%;
+	height:100%;
+	background-image: url(Background.png);
+	background-size:cover;
+	margin: 0 0 0 0;
+}
+#wrap {
+	width: 100%;
+	height: 100%;
+}
+#wrap2 {
+	width:90%;
+	margin-top:8%;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 100%;
+	background-image: url(AdBackground.png);
+	background-size:cover;
+}
+#wrap3 {
+	width: 85%;
+	margin-left: 7.5%;
+	margin-right:7.5%;
+	background-color:blue;
+	height: 100%;
+}
+#navBar {
+	margin-left: 0%;
+	margin-right: 0%;
+	width:100%;
+	background-image: url(NavBar.png);
+	height: 16em;
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin-top: 0%;
+	margin-bottom: 0;
+	position: fixed;
+}
+#navBar img {
+	position:fixed;
+	float:left;
+	height:100%;
+	width:100%;
+}
+#leftWrap {
+	background-color: yellow;
+	height: 36em;
+	padding-top: 1%;
+	
+}
+#rightWrap {
+	height: 36em;
+	background-color: black;
+	padding-top: 1%;
+}
+@media only screen and (max-width: 480px) {
+	#wrap3, #wrap2 { 
+		width: 100%;
+		margin: 1% 0 1% 0%;
+	}
+}
+#namePlate {
+	background-color:orange;
+	height: 8em;
+	width:95%;
+	margin-left:2.5%;
+}
+#donateFollow {
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+#follow {
+	background-color: orange;
+	height: 5em;
+}
+#donate {
+	background-color: orange;
+	height: 5em;
+}
+#About {
+	background-color: orange;
+	height: 20em;
+	width: 95%;
+	margin-left: 2.5%;
+	
+}
+#Achieve {
+	height: 20em;
+	width: 95%;
+	margin-left: 2.5%;
+	background-color: white;
+}
+#Community {
+	height:13.5em;
+	width: 95%;
+	margin-left: 2.5%;
+	background-color:white;
+}
