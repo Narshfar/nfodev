@@ -154,47 +154,37 @@ html, body {
 	background-size:cover;
 	margin: 0 0 0 0;
 }
-#wrap {
-	width: 100%;
-	height: 100%;
-}
-#wrap2 {
-	width: 95%;
-	margin-left:2.5%;
-	height: 100%;
-}
 
-@media only screen and (max-width: 480px) {
-	#wrap3, #wrap2 { 
-		width: 100%;
-		margin: 1% 0 1% 0%;
-	}
-}
 #navBar {
 	background-color:red;
 	height: 2em;
 	margin-top: 0;
 	position: fixed;
 }
-#ksVideo{
-	height: 25em;
-	background-color: blue;
-	margin-top: 3em;
-}
-#ksVideoDisc {
-	height: 25em;
-	background-color: yellow;
-	margin-top: 3em;
-}
-#nfoContent {
-	height: 25em;
-	background-color: black;
-}
-#recentPosts{
-	height: 25em;
-	background-color: orange;
-}
-#joined {
-	height: 25em;
+
+#About {
 	background-color: red;
+	height: 35em;
 }
+.member {
+	background-color:cyan;
+	height: 15em;
+}
+#wrap {
+	width: 100%;
+	height: 100%;
+}
+#wrap2 {
+	width:90%;
+	margin-top:3%;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 100%;
+}
+@media only screen and (max-width: 480px) {
+	#wrap3, #wrap2 { 
+		width: 100%;
+		margin: 1% 0 1% 0%;
+	}
+}
+

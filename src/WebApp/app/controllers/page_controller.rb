@@ -1,7 +1,17 @@
 class PageController < ApplicationController
 
 	def show
-		render params[:id] rescue render 'home'
+		unless params[:id].blank?
+			@pagename = params[:id] 
+		else
+			@pagename = 'home'
+		end
+
+
+		render @pagename #rescue render (@pagename = 'home')
+			
+			
+		
 	end
 	
 end
