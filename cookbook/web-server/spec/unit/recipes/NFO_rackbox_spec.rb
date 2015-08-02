@@ -6,7 +6,7 @@
 
 require 'spec_helper'
 
-describe 'web_server::NFO_rackbox' do
+describe 'web-server::NFO_rackbox' do
   context 'When all attributes are default, on an unspecified platform' do
     let(:chef_run) do
       runner = ChefSpec::ServerRunner.new

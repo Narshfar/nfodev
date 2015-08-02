@@ -1,9 +1,5 @@
 DEPENDENCIES
-  nginx
-  rackbox
-  rbenv
-  runit
-  web_server
+  web-server
     path: .
     metadata: true
 
@@ -20,8 +16,11 @@ GRAPH
   bluepill (2.3.1)
     rsyslog (>= 0.0.0)
   build-essential (2.2.3)
+  chef-sugar (3.1.1)
   chef_handler (1.2.0)
   curl (2.0.1)
+  database (4.0.7)
+    postgresql (>= 1.0.0)
   dmg (2.2.2)
   git (4.3.3)
     build-essential (>= 0.0.0)
@@ -38,7 +37,13 @@ GRAPH
     runit (~> 1.2)
     yum-epel (~> 0.3)
   ohai (2.0.1)
+  openssl (4.3.2)
+    chef-sugar (>= 3.1.1)
   packagecloud (0.0.19)
+  postgresql (3.4.16)
+    apt (>= 1.9.0)
+    build-essential (>= 0.0.0)
+    openssl (>= 0.0.0)
   rackbox (0.1.2)
     appbox (>= 0.0.0)
     nginx (>= 0.0.0)
@@ -57,8 +62,9 @@ GRAPH
   tmux (1.4.0)
   unicorn (2.0.0)
   user (0.4.2)
-  web_server (0.1.1)
+  web-server (0.1.0)
     apt (>= 0.0.0)
+    database (>= 0.0.0)
     nginx (>= 0.0.0)
     rackbox (>= 0.0.0)
     rbenv (>= 0.0.0)

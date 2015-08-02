@@ -1,0 +1,8 @@
+{
+  "run_list": [
+    "recipe[web-server::default]"
+  ],
+  "automatic": {
+    "ipaddress": "104.131.70.10"
+  }
+}
