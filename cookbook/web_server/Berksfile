@@ -1,5 +1,11 @@
 source "https://supermarket.chef.io"
+
 cookbook 'rackbox'
+cookbook 'rbenv'
+cookbook 'nginx'
+cookbook 'runit'
+
+
 
 
 

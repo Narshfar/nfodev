@@ -6,5 +6,5 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-
+include_recipe 'apt::default'
 include_recipe "web_server::NFO_rackbox"
