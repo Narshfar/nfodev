@@ -62,7 +62,7 @@ GRAPH
   tmux (1.4.0)
   unicorn (2.0.0)
   user (0.4.2)
-  web-server (0.1.4)
+  web-server (0.2.4)
     apt (>= 0.0.0)
     database (>= 0.0.0)
     nginx (>= 0.0.0)
