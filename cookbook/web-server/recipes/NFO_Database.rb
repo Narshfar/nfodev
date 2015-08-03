@@ -21,12 +21,26 @@ postgresql_database_user 'postgres' do
   action        :create
 end
 
+
 postgresql_database 'WebApp_production' do
   connection postgresql_connection_info
   action :create
 end
 
 postgresql_database_user 'postgres' do
+  connection    postgresql_connection_info
+  database_name 'WebApp_production'
+  privileges    [:all]
+  action        :grant
+end
+
+postgresql_database_user 'rails' do
+  connection    postgresql_connection_info
+  password    node['postgresql']['password']['postgres']
+  action        :create
+end
+
+postgresql_database_user 'rails' do
   connection    postgresql_connection_info
   database_name 'WebApp_production'
   privileges    [:all]
