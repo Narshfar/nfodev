@@ -7,7 +7,7 @@
 
 
 
-node.default["rackbox"]["ruby"]["versions"] = ["2.2.2", "1.9.3-p385"]
+node.default["rackbox"]["ruby"]["versions"] = ["2.2.2"]
 
 node.default["rackbox"]["ruby"]["global_version"] = "2.2.2"
 
