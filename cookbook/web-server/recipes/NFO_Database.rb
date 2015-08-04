@@ -36,7 +36,7 @@ end
 
 postgresql_database_user 'apps' do
   connection    postgresql_connection_info
-  password    node['postgresql']['password']['postgres']
+  password      'password'
   action        :create
 end
 
