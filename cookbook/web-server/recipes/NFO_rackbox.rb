@@ -22,10 +22,14 @@ node.default["rackbox"]["apps"]["passenger"] = [
 ]
 
 node.default['nginx']['passenger']['install_method'] == 'source'
-
+node.default['nginx']['source']['modules']  = %w(
+  nginx::http_ssl_module
+  nginx::http_gzip_static_module
+  nginx::passenger
+)
 include_recipe "appbox"
 include_recipe "rackbox::ruby"
+gem_package 'passenger'
 include_recipe "nginx::source"
-include_recipe "nginx::passenger"
 include_recipe "runit"
 include_recipe "rackbox::passenger"

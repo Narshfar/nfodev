@@ -6,9 +6,10 @@
 default[:web_server][:release] = "v#{Berkshelf::Webserver::Chef.cookbook_version(run_context)}"
 default['postgresql']['config']['port'] = 5432
 default['postgresql']['password']['postgres'] = 'password'
+default['postgresql']['password']['apps'] = 'password'
 default['postgresql']['pg_hba'] = [
   {:type => 'local', :db => 'all', :user => 'postgres', :addr => nil, :method => 'ident'},
-  {:type => 'local', :db => 'all', :user => 'all', :addr => nil, :method => 'ident'},
+  {:type => 'local', :db => 'all', :user => 'all', :addr => nil, :method => 'md5'},
   {:type => 'host', :db => 'all', :user => 'all', :addr => '127.0.0.1/32', :method => 'md5'},
   {:type => 'host', :db => 'all', :user => 'all', :addr => '::1/128', :method => 'md5'}
 ]
