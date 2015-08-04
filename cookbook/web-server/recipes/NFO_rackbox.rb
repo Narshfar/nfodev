@@ -20,6 +20,8 @@ node.default["rackbox"]["apps"]["passenger"] = [
    }
  }
 ]
+node.default['nginx']['passenger']['root'] = '/opt/rbenv/versions/2.2.2/lib/ruby/gems/22.0/gems/passenger-5.0.15'
+node.default['nginx']['passenger']['ruby'] = '/opt/rbenv/versions/2.2.2/bin/ruby'
 
 node.default['nginx']['passenger']['install_method'] == 'source'
 node.default['nginx']['source']['modules']  = %w(
