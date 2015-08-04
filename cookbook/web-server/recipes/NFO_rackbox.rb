@@ -25,7 +25,7 @@ node.default['nginx']['passenger']['install_method'] == 'source'
 
 include_recipe "appbox"
 include_recipe "rackbox::ruby"
-include_recipe "nginx::passenger"
 include_recipe "nginx::source"
+include_recipe "nginx::passenger"
 include_recipe "runit"
 include_recipe "rackbox::passenger"

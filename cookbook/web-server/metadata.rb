@@ -4,7 +4,7 @@ maintainer_email 'voxes@narshfar.com'
 license          'All rights reserved'
 description      'Installs/Configures Webserver'
 long_description 'Installs/Configures Webserver'
-version          '0.3.6'
+version          '0.3.7'
 
 depends 'apt'
 depends 'rbenv'
