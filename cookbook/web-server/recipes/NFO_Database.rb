@@ -34,13 +34,13 @@ postgresql_database_user 'postgres' do
   action        :grant
 end
 
-postgresql_database_user 'rails' do
+postgresql_database_user 'apps' do
   connection    postgresql_connection_info
   password    node['postgresql']['password']['postgres']
   action        :create
 end
 
-postgresql_database_user 'rails' do
+postgresql_database_user 'apps' do
   connection    postgresql_connection_info
   database_name 'WebApp_production'
   privileges    [:all]
