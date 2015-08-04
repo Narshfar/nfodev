@@ -20,7 +20,7 @@ node.default["rackbox"]["apps"]["passenger"] = [
    }
  }
 ]
-node.default['nginx']['passenger']['root'] = '/opt/rbenv/versions/2.2.2/lib/ruby/gems/22.0/gems/passenger-5.0.15'
+node.default['nginx']['passenger']['root'] = 'usr/local/bin/passenger'#'/opt/rbenv/versions/2.2.2/lib/ruby/gems/22.0/gems/passenger-5.0.15'
 node.default['nginx']['passenger']['ruby'] = '/opt/rbenv/versions/2.2.2/bin/ruby'
 
 node.default['nginx']['passenger']['install_method'] == 'source'
@@ -31,7 +31,6 @@ node.default['nginx']['source']['modules']  = %w(
 )
 include_recipe "appbox"
 include_recipe "rackbox::ruby"
-gem_package 'passenger'
 include_recipe "nginx::source"
 include_recipe "runit"
 include_recipe "rackbox::passenger"
